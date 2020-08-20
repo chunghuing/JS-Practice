@@ -14,13 +14,13 @@ function func (item, title, method){
         e.preventDefault()
         show.innerHTML = `${title}：<span>${method}</span>`
     })
-};
+}
 
-func(btn(1), '完整網址', location.href);
-func(btn(2), '主機名稱', location.host);
-func(btn(3), '網域名稱', location.hostname);
-func(btn(4), '路徑名稱', location.pathname);
-func(btn(5), '網址後的query值', location.search || '無');
+func(btn(1), '完整網址', location.href)
+func(btn(2), '主機名稱', location.host)
+func(btn(3), '網域名稱', location.hostname)
+func(btn(4), '路徑名稱', location.pathname)
+func(btn(5), '網址後的query值', location.search || '無')
 
 // 重新整理
 btn(6).addEventListener('click', (e) => {
